@@ -180,6 +180,20 @@ class Program {
         
         Console.WriteLine("");
     }
+
+  //CHAPTER 12: CONTINUE//
+  //skips a certain if conditions given, same structure as break;
+   int input = Convert.ToInt32(Console.ReadLine());
+    for (int i = 0; i <= input; i++){
+        i += 1;
+        if (i % 2 == 0){
+        //skips everything divisible by 2
+            continue;
+        }
+       Console.WriteLine(i); 
+    }
+  }
+}
     
   }
 }
