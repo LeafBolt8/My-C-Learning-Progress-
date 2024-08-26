@@ -1,0 +1,185 @@
+using System;
+class Program {
+  public static void Main(String[] args) {
+    Console.WriteLine("Hello World!");
+    // Basic text output
+    
+   
+   //CHAPTER 1: DATATYPES, VARIABLES, AND VALUES//
+   //THESE ARE USED TO STORE VALUES TO BE ABLE TO BE USED IN A LONG TIME RUN OF CODE//
+    Console.WriteLine("CHAPTER 1: DATATYPES, VARIABLES, AND VALUES");
+
+    int a = 5;
+    Console.WriteLine(a);
+    //int = datatype
+    //a = variable
+    //5 = value
+    
+    float b = 5.5F;
+    Console.WriteLine(b);
+    //float are decimal values
+    //value must end with F to declare it a float
+    
+    char c = '$';
+    Console.WriteLine(c);
+    //char only allows single characters 
+    //secured with single line quotes
+    
+    bool d = true;
+    Console.WriteLine(d);
+    //boolean is bool in c sharp
+    //true and false
+    
+    string e = "String is used to store multiple characters!";
+    Console.WriteLine(e);
+    //see text
+    //can also include other characters other than letters
+    Console.WriteLine("");
+   
+    
+    //CHAPTER 2: ARITHMETIC OPERATORS//
+    Console.WriteLine("CHAPTER 2: ARITHMETIC OPERATORS");
+    int f = 10;
+    int g = 5;
+    int h = f + g; //addition
+    int i = f * g; //multipilication
+    int j = f / g; // division
+    int k = f % g; //modulo or remainder
+    int l = f - g; //subtraction
+    Console.Write(h);
+    Console.Write(" "+ i);
+    Console.Write(" "+j);
+    Console.Write(" "+ k);
+    Console.WriteLine(" "+ l);
+    Console.WriteLine("");
+    
+    
+   //CHAPTER 3: INCREMENT AND DECREMENT//
+    Console.WriteLine("CHAPTER 3: INCREMENT AND DECREMENT");
+    int m = 20;
+    m++;
+    Console.WriteLine(m);
+    //Increment, increases value by 1
+    int n = 20;
+    n--;
+    Console.WriteLine(n);
+    //Decrement, decreases value by 1
+    
+    Console.WriteLine("");
+   
+    
+    //CHAPTER 4: ASSIGNMENT OPERATORS//
+    Console.WriteLine("CHAPTER 4: ASSIGNMENT OPERATORS");
+    int o = 15;
+    o += 5;
+    Console.WriteLine(o);
+    //output is 15+5
+    
+    Console.WriteLine(""); 
+ 
+    //CHAPTER 5: COMPARISON OPERATORS//
+    //This confirms if the given condition is true or false
+    // != not equal
+    // < less than
+    // > greather than
+    // >= greater than or equal to
+    // <= less than or equal to
+    Console.WriteLine("CHAPTER 5: COMPARISON OPERATORS");
+    
+    int p = 15;
+    int q = 20;
+    bool r = p != q;
+    Console.WriteLine(r);
+    
+    Console.WriteLine("");
+    
+    
+    //CHAPTER 6: LOGICAL OPERATORS//
+    //This applies true or false logic if given Two(2) conditions
+    // && will output as True if both conditions are True
+    // || willl output as True if one of the conditions is True
+    // ! will output OPPOSITE to whether its true or false
+    Console.WriteLine("CHAPTER 6: LOGICAL OPERATORS");
+    
+    bool s = q > p && o > n;
+    Console.WriteLine(s);
+   
+    Console.WriteLine("");
+   
+    
+    //CHAPTER 7: DECISION MAKING (IF, ELSE IF, AND ELSE)//
+    Console.WriteLine("CHAPTER 7: DECISION MAKING (IF, ELSE IF, AND ELSE)");
+    
+    int t = 10;
+    
+    if (t > 18) {
+        Console.WriteLine("You can be arrested hehe");
+    }
+    else if (t < 18) {
+        Console.WriteLine("Lucky");
+    }
+    else {
+        Console.WriteLine("Happy century lol");
+    }
+    
+    Console.WriteLine("");
+
+    //CHAPTER 8: INPUT AND OUTPUT//
+    Console.WriteLine("CHAPTER 8: INPUT AND OUTPUT");
+    
+    Console.WriteLine("Enter text:");
+    string u = Console.ReadLine();
+    //text
+    
+    Console.WriteLine("Enter a number:");
+    int v = Convert.ToInt32(Console.ReadLine());
+    //numbers
+    
+    Console.WriteLine("Enter a number with decimal: ");
+    float w = Convert.ToSingle(Console.ReadLine());
+    //decimals
+    
+    Console.WriteLine("");
+    
+    //CHAPTER 9: THE FOR LOOP//
+    Console.WriteLine("CHAPTER 9: THE FOR LOOP");
+    
+    for (int x = 0; x <= 10; x++){
+        Console.WriteLine("Hello World");
+    }
+    // for (DECLARATION, CONDITION, UPDATE)
+    // after the for loop command, the code involved in the loop should be secured by {}
+    
+    Console.WriteLine("");
+    
+    //CHAPTER 10: THE WHILE LOOP//
+    Console.WriteLine("CHAPTER 10: THE WHILE LOOP");
+    
+    int y = 1;
+    //IF YOU WANT FROM USER INPUT: int h = Convert.ToInt32(Console.ReadLine());
+    while (y <= 10){
+        Console.WriteLine("Hello World once again!");
+        y++;
+    }
+    //the first line is the declaration 
+    // the second is the CONDITION
+    // third is output
+    // 4th is the increment/decrement to make sure it doesn't go in an infinite loop
+    
+    Console.WriteLine("");
+    
+    //CHAPTER 11: BREAKING THE LOOP//
+    // follow the bracket rule after for loop and if
+    // the output will be separate below break;
+    Console.WriteLine("CHAPTER 11: BREAKING THE LOOP");
+    for (int z = 0; z <= 100; z+=3){
+        if (z == 21) {
+            break;
+        }
+        Console.WriteLine("It stops at 21");
+        
+        Console.WriteLine("");
+    }
+    
+  }
+}
