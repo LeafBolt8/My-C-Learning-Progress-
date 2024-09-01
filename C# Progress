@@ -1,6 +1,6 @@
 using System;
-class Program {
-  public static void Main(String[] args) {
+class Program {//start of main class
+  public static void Main(String[] args) {//start of main method
     Console.WriteLine("Hello World!");
     // Basic text output
     
@@ -179,21 +179,30 @@ class Program {
         Console.WriteLine("It stops at 21");
         
         Console.WriteLine("");
-    }
-
-  //CHAPTER 12: CONTINUE//
-  //skips a certain if conditions given, same structure as break;
-   int input = Convert.ToInt32(Console.ReadLine());
-    for (int i = 0; i <= input; i++){
-        i += 1;
-        if (i % 2 == 0){
-        //skips everything divisible by 2
-            continue;
-        }
-       Console.WriteLine(i); 
-    }
-  }
-}
+        
+    }   
+    //CHAPTER 12: VOID METHODS//        
+    VoidMethod("This is a demo of a method, its a different part of the main method but still part of the class, this is used to quickly call certain things you put inside external methods, also void means to not return anything (only prints and shows, not stores for future used like variables, return type does that lol)");
+    //REPRESENTS: VoidMethod(string voiddescription)
+    //TO CALL: METHOD NAME(PARAMETER)
     
-  }
-}
+    
+    int returnDemo = Convert.ToInt32(Console.ReadLine());
+    returnAge(returnDemo);
+    
+  }//end of main method
+  
+  
+  //CHAPTER 12: VOID METHODS//
+  public static void VoidMethod(string voiddescription){
+        Console.WriteLine(voiddescription);
+    }
+    
+  public static int returnAge (int Age){
+        int returnAgee = (Age);
+        return Age;
+    }
+    
+    
+    
+}//end of main class
